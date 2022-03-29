@@ -15,13 +15,13 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project         = "vagrant-aws"
 
-  s.add_runtime_dependency "fog", "~> 1.22"
+  s.add_runtime_dependency "fog-aws", ">= 2.0"
   s.add_runtime_dependency "iniparse", "~> 1.4", ">= 1.4.2"
 
   s.add_development_dependency "rake"
   # rspec 3.4 to mock File
   s.add_development_dependency "rspec", "~> 3.4"
-  s.add_development_dependency "rspec-its"
+  s.add_development_dependency "rspec-its", "~> 1.2"
 
   # The following block of code determines the files that should be included
   # in the gem. It does this by reading all the files in the directory where

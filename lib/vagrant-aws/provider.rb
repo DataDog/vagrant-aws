@@ -6,6 +6,8 @@ module VagrantPlugins
     class Provider < Vagrant.plugin("2", :provider)
       def initialize(machine)
         @machine = machine
+        @machine.config.nfs.functional = false 
+        @machine.config.smb.functional = false 
       end
 
       def action(name)
