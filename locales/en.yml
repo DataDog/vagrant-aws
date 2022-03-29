@@ -33,7 +33,7 @@ en:
     packaging_instance_complete: |-
       Burn was successful in %{time_seconds}s
     ready: |-
-      Machine is booted and ready for use!
+      Machine is booted and ready for use! Check your AWS console for more information.
     rsync_not_found_warning: |-
       Warning! Folder sync disabled because the rsync binary is missing in the %{side}.
       Make sure rsync is installed and the binary can be found in the PATH.
@@ -51,7 +51,7 @@ en:
     waiting_for_ready: |-
       Waiting for instance to become "ready"...
     waiting_for_ssh: |-
-      Waiting for SSH to become available...
+      Waiting for SSH to become available... You should be able to see the instance on your AWS console right now.
     warn_networks: |-
       Warning! The AWS provider doesn't support any of the Vagrant
       high-level network configurations (`config.vm.network`). They

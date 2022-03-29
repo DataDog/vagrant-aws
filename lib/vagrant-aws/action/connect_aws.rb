@@ -22,7 +22,7 @@ module VagrantPlugins
 
           # Build the fog config
           fog_config = {
-            :provider => "AWS",
+            :provider => :aws,
             :region   => region
           }
           if region_config.use_iam_profile
@@ -38,8 +38,6 @@ module VagrantPlugins
 
           @logger.info("Connecting to AWS...")
           env[:aws_compute] = Fog::Compute.new(fog_config)
-          # env[:aws_elb]     = Fog::AWS::ELB.new(fog_config)
-
           @app.call(env)
         end
       end

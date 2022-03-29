@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 group :plugins do
-  # Dependencies need to be specified in vagrant-google.gemspec
+  # Dependencies need to be specified in vagrant-aws.gemspec
   gemspec
 end
 
