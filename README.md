@@ -33,6 +33,7 @@ Vagrant.configure("2") do |config|
       aws.ami = "ami-0c02fb55956c7d316"
       aws.instance_type= "t2.micro"
       override.ssh.username = "ec2-user"
+      aws.user_data = File.read("user_data.sh") # pass setup script 
       override.ssh.private_key_path = "<PATH TO PEM FILE IN YOUR LOCAL" # example: ~/test.pem
     end
   end
