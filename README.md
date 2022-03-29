@@ -8,9 +8,16 @@ Note: The only functionalities tested are `vagrant up` and `vagrant destroy` for
 2. `cd` into this repository
 3. Run `bundle` to install dependencies.
 4. Run `gem build vagrant-aws.gemspec` to create a gem file
-4. Install the gem file to your vagrant plugins as `vagrant plugin install <PATH_TO_CURRENT_DIR>/vagrant-aws-0.7.2.gem
+4. Install the gem file to your vagrant plugins as `vagrant plugin install <PATH_TO_CURRENT_DIR>/vagrant-aws-0.7.2.gem`
 5. Ensure your aws credentials are written using aws configure. If you do not want to use this, you can pass your aws credentials in the vagrantfile as well.
 5. Create an EC2 instance with `vagrant up --provider=aws`.
+
+
+# Quick install for M1
+If you have an M1, the following should work:
+1.  Fork this repo and clone it to your local.
+2.  Run `vagrant plugin install <PATH_TO_CURRENT_DIR>/vagrant-aws-0.7.2.gem`. The gem file is already in the repository.
+
 
 To create an ec2 instance use the following sample:
 ```
