@@ -6,7 +6,7 @@ Note: The only functionalities tested are `vagrant up` and `vagrant destroy` for
 ## To add this as a plugin for vagrant, do the following:
 1. Fork this repo and clone it to your local.
 2. `cd` into this repository
-3. Run `bundle` to install dependencies.
+3. Run `bundle` to install dependencies. If you dont have bundle, make sure you have Xcode installed.
 4. Run `gem build vagrant-aws.gemspec` to create a gem file
 4. Install the gem file to your vagrant plugins as `vagrant plugin install <PATH_TO_CURRENT_DIR>/vagrant-aws-0.7.2.gem`
 5. Ensure your aws credentials are written using aws configure. If you do not want to use this, you can pass your aws credentials in the vagrantfile as well.
