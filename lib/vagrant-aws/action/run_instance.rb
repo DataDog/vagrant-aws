@@ -201,12 +201,13 @@ module VagrantPlugins
                 end
                 sleep 2
               end
+             
             end
-
             @logger.info("Time for SSH ready: #{env[:metrics]["instance_ssh_time"]}")
 
             # Ready and booted!
             env[:ui].info(I18n.t("vagrant_aws.ready"))
+          
           end
 
           # Terminate the instance if we were interrupted

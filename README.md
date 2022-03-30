@@ -10,8 +10,9 @@ Note: The only functionalities tested are `vagrant up` and `vagrant destroy` for
 4. Run `gem build vagrant-aws.gemspec` to create a gem file
 4. Install the gem file to your vagrant plugins as `vagrant plugin install <PATH_TO_CURRENT_DIR>/vagrant-aws-0.7.2.gem`
 5. Ensure your aws credentials are written using aws configure. If you do not want to use this, you can pass your aws credentials in the vagrantfile as well.
-5. Create an EC2 instance with `vagrant up --provider=aws`.
-
+6. Install a dummy box using `vagrant box add dummy https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box`
+7. Create an EC2 instance with `vagrant up --provider=aws`.
+Note: Ensure your default security group/ security group that you mention in your Vagrantfile allows SSH access.
 
 # Quick install for M1
 If you have an M1, the following should work:

@@ -11,6 +11,7 @@ tags
 Gemfile.lock
 
 # Vagrant
+*.gem
 .vagrant
 Vagrantfile
 !example_box/Vagrantfile
