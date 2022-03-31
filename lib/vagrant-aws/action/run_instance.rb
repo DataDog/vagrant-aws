@@ -178,6 +178,7 @@ module VagrantPlugins
             end
         end
 
+        sleep 5
           if !env[:interrupted]
             env[:metrics]["instance_ssh_time"] = Util::Timer.time do
               # Wait for SSH to be ready.

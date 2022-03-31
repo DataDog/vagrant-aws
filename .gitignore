@@ -11,6 +11,8 @@ tags
 Gemfile.lock
 
 # Vagrant
+vm/
+setup/
 *.gem
 .vagrant
 Vagrantfile

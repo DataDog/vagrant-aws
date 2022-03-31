@@ -2,10 +2,19 @@
 
 This is a modified version of [vagrant-aws](https://github.com/mitchellh/vagrant-aws) for a homework assignment. It is an attempt to fix the installation errors that come with the original provider since it is out-of date. 
 
-Note: The only functionalities tested are `vagrant up` and `vagrant destroy` for the purpose of the assignment.
-## To add this as a plugin for vagrant, do the following:
+Note: The only functionalities tested are `vagrant up`, `vagrant ssh` and `vagrant destroy` for the purpose of the assignment.
+
+# Quick install for M1
+If you have an M1, the following should work:
+1.  Fork this repo and clone it to your local.
+2.  Run `vagrant plugin install <PATH_TO_CURRENT_DIR>/vagrant-aws-0.7.2.gem`. The gem file is already in the repository.
+
+## To add this as a plugin for vagrant manually, do the following:
 1. Fork this repo and clone it to your local.
 2. `cd` into this repository
+
+You can either run the following steps or you can use the Makefile in this repository and run `make` in your command line. It should perform the following steps automatically, provided you have Xcode installed. 
+
 3. Run `bundle` to install dependencies. If you dont have bundle, make sure you have Xcode installed.
 4. Run `gem build vagrant-aws.gemspec` to create a gem file
 4. Install the gem file to your vagrant plugins as `vagrant plugin install <PATH_TO_CURRENT_DIR>/vagrant-aws-0.7.2.gem`
@@ -14,10 +23,6 @@ Note: The only functionalities tested are `vagrant up` and `vagrant destroy` for
 7. Create an EC2 instance with `vagrant up --provider=aws`.
 Note: Ensure your default security group/ security group that you mention in your Vagrantfile allows SSH access.
 
-# Quick install for M1
-If you have an M1, the following should work:
-1.  Fork this repo and clone it to your local.
-2.  Run `vagrant plugin install <PATH_TO_CURRENT_DIR>/vagrant-aws-0.7.2.gem`. The gem file is already in the repository.
 
 
 To create an ec2 instance use the following sample:
